@@ -1,0 +1,33 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden; 
+    cursor: crosshair;
+}
+
+/* Style for each heart */
+span {
+    background: url("heart.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none; 
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    animation: animate 3s linear forwards;
+    opacity: 1;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -200%) scale(0.5);
+        opacity: 0;
+    }
+}
