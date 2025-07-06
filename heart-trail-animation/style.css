@@ -16,18 +16,20 @@ span {
     pointer-events: none; 
     background-size: cover;
     transform: translate(-50%, -50%);
-    animation: animate 3s linear forwards;
+    animation: animate 6s linear forwards;
     opacity: 1;
 }
 
 
 @keyframes animate {
     0% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) ;
         opacity: 1;
+        filter: hue-rotate(0);
     }
     100% {
-        transform: translate(-50%, -200%) scale(0.5);
+        transform: translate(-50%, -5000%) ;
         opacity: 0;
+        filter:hue-rotate(720deg) ;
     }
 }
